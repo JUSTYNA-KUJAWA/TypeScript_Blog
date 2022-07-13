@@ -66,7 +66,7 @@ const selectorTagsList: string  = '.sidebar .tags';
   }
 
 
-  const generateTags = () => {
+  const generateTags = (): void => {
 
     /* create a new array for holding unique tag names */
     let allTags: string[] = [];
@@ -121,7 +121,7 @@ const selectorTagsList: string  = '.sidebar .tags';
     tagList.innerHTML = allTagsHTML;
   }
 
-  const generateAuthors = () => {
+  const generateAuthors = (): void  => {
 
     /* create list of unique authors */
     let allAuthors: string[] = [];
@@ -155,6 +155,7 @@ const selectorTagsList: string  = '.sidebar .tags';
     }
 
   }
+  
 
   // generate title links, tags and author based on articles */
   generateTitleLinks();
